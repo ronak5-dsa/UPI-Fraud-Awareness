@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPI Fraud Awareness</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 <body> <header>
-    <h1>UPI Fraud Awareness </h1>
+    <h1 class="header">UPI Fraud Awareness portal</h1>
+    <button id="darkModeToggle"> Dark Mode</button>
+    </header>
     <nav>
       <a href="index.html"> Home</a> 
       <a href="scams.html"> Scam Types</a>
       <a href="tips.html"> Safety Tips</a>
      </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome</h2>
-            <p>This website helps user understand different types of UPI fraud and how to stay safe online. </p>
-        </section>
+    
+    <main class="main content">
+        <div class="card" onclick="window.location.href='scams.html'">
+        <h2>Types of Scams </h2>
+        <p>Explore common UPI frauds like phishing, QR scam, OTP fraud, etc.</p>
+        </div>
+       
+        
+         <div class="card" onclick="window.location.href='tips.html'">
+        <h2> Safety Tips </h2>
+        <p>Learn how to protect yourself from digital frauds.</p>
+        </div>
+        
+         <div class="card" onclick="window.location.href='report.html'">
+        <h2> Report Scam  </h2>
+        <p>Simulate scam reporting and learn response steps.</p>
+        </div>
+
     </main>
     <footer>
         <p> created by Ronak Sharma </p>
     </footer>
+    <script src="assets/script.js"></script>
 </body>
 </html>
