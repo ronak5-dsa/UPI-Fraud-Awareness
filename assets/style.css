@@ -106,3 +106,54 @@ header nav a:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
 }
+.report-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-form label {
+  margin: 1rem 0 0.3rem;
+  font-weight: 600;
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1.8px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.report-form button {
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report-form button:hover {
+  background-color: #005fa3;
+}
