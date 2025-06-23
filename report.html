@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report a Scam</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Report a UPI Scam</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="scams.html">Scam Types</a>
+      <a href="tips.html">Safety Tips</a>
+    </nav>
+  </header>
+
+  <main class="report-container">
+    <form action="thankyou.html" method="post" class="report-form">
+      <label for="name">👤 Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">📧 Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">⚠️ Type of Scam:</label>
+      <select id="type" name="scam-type" required>
+        <option value="">-- Select a Scam Type --</option>
+        <option value="phishing">Phishing Call</option>
+        <option value="qr">QR Code Scam</option>
+        <option value="upi-app">Fake UPI App</option>
+        <option value="sim-swap">SIM Swap</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="desc">📝 Description:</label>
+      <textarea id="desc" name="description" rows="5" required></textarea>
+
+      <button type="submit">🚨 Submit Report</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 UPI Fraud Awareness</p>
+  </footer>
+</body>
+</html>
